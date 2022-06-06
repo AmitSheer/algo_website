@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <style>
+        html, body {
+            min-height: 100%;
+        }
+
+        body, div, form, input, label {
+            padding: 0;
+            margin: 0;
+            outline: none;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 13px;
+            color: #666;
+            line-height: 22px;
+        }
+
+        legend {
+            color: #fff;
+            background-color: #095484;
+            padding: 3px 5px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<hr/>
+<fieldset>
+    <legend>Output:</legend>
+    <p><img style='width:400px; height:300px' src='{{ url_for("static", filename="images/plot.png") }}'/>
+    </p>
+
+
+</fieldset>
+</body>
+</html>
