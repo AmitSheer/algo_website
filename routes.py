@@ -59,8 +59,9 @@ def home():
             iterations=form.iter.data,
             centrality=find_centrality(form.centrality.data),
             graph_type=find_algo(form.type.data), gravity=form.gravity.data, fig=True)
-        pic_path = os.path.join(app.root_path, 'static\images\plot.png')
-        fig.savefig(pic_path)
+#         pic_path = os.path.join(app.root_path, 'static\images\plot.png')
+        fig.savefig('/home/amitsheer/algo_website/static/images')
+#         fig.savefig(pic_path)
         return redirect(url_for('result'))
     else:
         return render_template('homepage.html', form=form)
